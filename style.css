@@ -644,3 +644,48 @@ span {
 .contactSection a:hover {
     text-decoration: underline; /* Underline effect for links */
 }
+/* Default styles for larger screens */
+.header {
+    font-size: 2rem;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    /* Adjust for tablets */
+    .header {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust for phones */
+    .header {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .some-element {
+        display: none; /* Hide unnecessary elements on mobile */
+    }
+}
+.container {
+    width: 100%;
+    padding: 0 20px; /* Adjust padding or margins for smaller devices */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Switch to one column on smaller screens */
+    }
+}
+@media (max-width: 480px) {
+    .sidebar {
+        display: none; /* Hide the sidebar on mobile */
+    }
+}
