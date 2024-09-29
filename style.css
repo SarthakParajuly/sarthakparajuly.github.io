@@ -644,3 +644,16 @@ span {
 .contactSection a:hover {
     text-decoration: underline; /* Underline effect for links */
 }
+.portfolioVideo {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for fade-in and hover */
+}
+
+.portfolioVideo.loaded {
+    opacity: 1; /* Fully visible */
+}
+
+.portfolioVideo:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
