@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sarthak Parajuly</title>
+    <link rel="shortcut icon" type="image/x-icon" href="profile (2).png" />
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Sarthak Parajuly</a>
+
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="#Portfolio" class="scroll-link">Portfolio</a>
+            <a href="#contact" >Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="images/myself.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Sarthak</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Hi, Welcome to My Website I like editing videos : 🙋‍♂️ (and a bit of programming)</p>
+            <br>
+          
+            <a href="#" class="btn">Hire me</a>
+        </div>
+
+
+    </section>
+    <section>
+
+        
+        <div id="Portfolio" class="Portfolio">
+            <h1>Portfolio</h1> 
+        </div>
+        <br>
+        <div class="video-container">
+            <iframe id="portfolioVideo" width="1300" height="800" src="https://www.youtube.com/embed/CV3n5z7Kc3M?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+        
+
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h1>Contact Me</h1>
+        <p>If you're interested enough, send me a message at my email or my Discord.</p>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:sarthakparajuli@gmail.com">sarthakparajuli@gmail.com</a></p>
+            <p><i class="fab fa-discord"></i> Discord: sarthakparajuly_30164</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        // Load the YouTube IFrame Player API code asynchronously
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      
+        var player;
+      
+        // This function creates an <iframe> and YouTube player after the API code downloads.
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('portfolioVideo', {
+            events: {
+              'onStateChange': onPlayerStateChange
+            }
+          });
+        }
+      
+        // Function to detect state change
+        function onPlayerStateChange(event) {
+          if (event.data === YT.PlayerState.ENDED) {
+            // Video has ended, scroll to the contact section
+            document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      </script>
+      
+
+</body>
+
+</html>
