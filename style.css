@@ -213,19 +213,19 @@ span{
 
 @keyframes words{
     0%, 20%{
-        content: "Video Editor";
+        content: "🎥Video Editor🤫";
     }
     21%, 40%{
-        content: "Content Creator";
+        content: "🤔Content Creator🤨";
     }
     41%, 60%{
-        content: "Random Ass Programmer?";
+        content: "Random Guy From Internet✅";
     }
     61%, 80%{
-        content: "Youtuber";
+        content: "👏Gaming Video Editor✅";
     }
     81%, 100%{
-        content: "Well Well Well";
+        content: "Video Editor 🙋‍♂️";
     }
 }
 
@@ -607,4 +607,40 @@ span {
 
 #contactSection a:hover {
     text-decoration: underline;
+}
+.contactSection {
+    background-color: #1a1a1a; /* Keep the background */
+    color: white; /* Text color */
+    padding: 40px 30px; /* Adjust padding for more space */
+    margin: 0 auto; /* Center align */
+    text-align: center;
+    max-width: 800px; /* Increased max-width for more width */
+    border-radius: 10px; /* Smooth corners */
+    min-height: 300px; /* Reduce height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover */
+}
+
+.contactSection:hover {
+    transform: scale(1.02); /* Slightly enlarge */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+.contactSection h1 {
+    font-size: 3rem; /* Increase title size */
+    color: #a128ff; /* Title color */
+    margin-bottom: 20px;
+}
+
+.contactSection p {
+    font-size: 1.4rem; /* Increase text size */
+    line-height: 1.6; /* Slightly increase line spacing for readability */
+}
+
+.contactSection a {
+    font-size: 1.3rem; /* Increase link size */
+    color: #4a5bb9; /* Link color */
+}
+
+.contactSection a:hover {
+    text-decoration: underline; /* Underline effect for links */
 }
