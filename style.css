@@ -644,13 +644,3 @@ span {
 .contactSection a:hover {
     text-decoration: underline; /* Underline effect for links */
 }
-.portfoliovideo {
-    position: relative; /* Ensure positioning for the hover effect */
-    overflow: hidden; /* Clip any overflowing content */
-    transition: transform 0.3s ease; /* Smooth transform effect */
-}
-
-.portfoliovideo:hover {
-    transform: scale(1.05); /* Slightly enlarge the video on hover */
-    filter: brightness(1.1); /* Increase brightness on hover */
-}
